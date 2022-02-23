@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,CAAC,CAAC;EACA,WAAW,EAAE,oBAAoB;CAClC;;AAED,AAAA,IAAI,CAAC;EACH,OAAO,EAAE,IAAI;CACd;;AAED,AAAA,EAAE,CAAC;EACD,UAAU,EAAE,IAAI;EAChB,WAAW,EAAE,cAAc;EAC3B,UAAU,EAAE,GAAG;EACf,YAAY,EAAE,GAAG;CAClB",
-    "sources": [
-        "json物件陣列概念&for遍歷.scss"
-    ],
-    "names": [],
-    "file": "json物件陣列概念&for遍歷.css"
-}

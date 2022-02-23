@@ -1,0 +1,29 @@
+* {
+  font-family: "microsoft jhenghei";
+  //   border: solid 1px black;
+}
+
+body {
+  padding: 30px;
+}
+
+.todolist {
+  display: inline-block;
+  padding: 20px;
+  border: 3px black solid;
+  ul {
+    padding: 0px;
+    li {
+      list-style: none;
+      width: 300px;
+      padding: 5px;
+    }
+  }
+}
+
+.done {
+  &:before {
+    content: " √ ";
+    color: red;
+  }
+}

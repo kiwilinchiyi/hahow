@@ -1,0 +1,96 @@
+svg {
+  width: 240px;
+  border: solid 2px black;
+}
+
+#pic1 {
+  stroke: black;
+  stroke-width: 3px;
+}
+
+#pic1 circle {
+  fill: white;
+}
+
+#pic2 {
+  stroke: black;
+  stroke-width: 3px;
+}
+
+#pic2 circle {
+  fill: white;
+}
+
+#pic2 rect {
+  fill: none;
+}
+
+#pic3 {
+  stroke: black;
+  stroke-width: 2px;
+}
+
+#pic3 circle {
+  fill: black;
+}
+
+#pic3 polyline {
+  fill: none;
+}
+
+#pic6 {
+  stroke: black;
+  stroke-width: 2px;
+  fill: none;
+}
+
+#pic6 .frame_outer,
+#pic6 .frame_inner,
+#pic6 .neck,
+#pic6 .bottom {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+#pic6 .screen_content {
+  opacity: 0;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+#pic6:hover .frame_outer,
+#pic6:hover .frame_inner,
+#pic6:hover .neck,
+#pic6:hover .bottom {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+}
+
+#pic6:hover .screen_content {
+  opacity: 1;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+#pic6 circle {
+  fill: red;
+  stroke: none;
+}
+
+#pic6 text {
+  fill: black;
+  stroke: none;
+  font-family: "microsoft jhenghei";
+  font-size: 10px;
+}
+/*# sourceMappingURL=svg讓你的LOGO或圖像動起來.css.map */

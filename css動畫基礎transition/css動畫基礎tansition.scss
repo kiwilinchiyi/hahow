@@ -1,0 +1,70 @@
+body {
+  background-color: #333;
+}
+.cross {
+  border: solid 2px black;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  background-color: #fcdf1e;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  .line1,
+  .line2 {
+    // border: solid 2px black;
+    background-color: white;
+    width: 150px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    // transform: translateX(-50%) translateY(-50%);
+    transition-duration: 0.5s;
+  }
+  .line1 {
+    transform: translateX(-50%) translateY(-100%);
+  }
+  .line2 {
+    transform: translateX(-50%) translateY(100%);
+  }
+  &:hover {
+    background-color: #fc5d1e;
+    .line1,
+    .line2 {
+      width: 170px;
+    }
+    .line1 {
+      transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    }
+    .line2 {
+      transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+    }
+  }
+}
+
+.block {
+  border: solid 2px;
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  font-family: "Microsoft JhengHei";
+  position: relative;
+  .content,
+  .title {
+    // 因此可以看的到
+    opacity: 0;
+
+    top: 5px;
+  }
+  &:hover .title {
+    // 因此看不到
+    opacity: 1;
+    transition-duration: 0.5s;
+  }
+  &:hover .content {
+    opacity: 1;
+    transition-duration: 0.5s;
+    transition-delay: 0.5s;
+    top: 5px;
+  }
+}

@@ -1,0 +1,58 @@
+* {
+  //   border: solid 2px black;
+  font-family: "microsoft jhenghei";
+  position: relative;
+}
+body,
+html {
+  // 先設定寬高各100%，在phone 在設定margin-left right的auto
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #eee;
+}
+.phone {
+  width: 240px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+  border: solid 1px #888;
+  border-radius: 6px;
+  .top {
+    width: 100%;
+    height: 150px;
+    background-image: url("https://scontent.ftpe8-1.fna.fbcdn.net/v/t1.18169-9/12991004_1297281046954021_6265305831816039839_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=19026a&_nc_ohc=lwlNHQ1c3IsAX95MX4R&_nc_ht=scontent.ftpe8-1.fna&oh=00_AT9jlfcOW9gzuCOjbmCCZ-WaTQQ978uAzd-For-aZDzcoQ&oe=621DCA3F");
+    background-size: cover;
+    background-position: center center;
+  }
+  .bottom {
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    .headpic {
+      width: 80px;
+      height: 80px;
+      position: absolute; //   相對於bottom
+      top: -50px;
+      left: 20px;
+      background-image: url("https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.6435-9/113313364_3768359139846187_5525803917106099366_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=jsCFwCTjAC8AX8l4aVY&_nc_ht=scontent.ftpe8-4.fna&oh=00_AT_IoL806H4wsW0FqyDLqvI0QnhudFd9ULN-IfgqBYNxyA&oe=621D2071");
+      background-size: cover; //   背景圖片剛好塞滿
+      border: solid 2px white;
+      .name {
+        right: -100px;
+        top: 50px;
+        color: black;
+        letter-spacing: 2px; //字的間距
+        font-weight: 400;
+      }
+    }
+    .text {
+      position: absolute; //   相對於bottom
+      top: 50px;
+      left: 20px;
+      color: black;
+      font-size: 13px;
+    }
+  }
+}

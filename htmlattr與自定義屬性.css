@@ -1,0 +1,62 @@
+* {
+  background-color: #333;
+  font-family: "Microsoft JhengHei";
+}
+
+div {
+  border: solid 2px black;
+  width: 150px;
+  height: 50px;
+  padding: 20px;
+  color: white;
+  background-color: transparent;
+  margin: 20px;
+}
+
+div::before {
+  content: attr(data-size) "-";
+}
+
+div::after {
+  content: "$";
+}
+
+div[data-size="small"] {
+  width: 150px;
+  height: 50px;
+}
+
+div[data-size="medium"] {
+  width: 250px;
+  height: 70px;
+}
+
+div[data-size="large"] {
+  width: 350px;
+  height: 90px;
+}
+
+div[data-color="red"] {
+  border-color: #fc216f;
+}
+
+div[data-color="blue"] {
+  border-color: #216efc;
+}
+
+div[data-color="green"] {
+  border-color: #27c42d;
+}
+
+.red {
+  border: solid 1px #fc216e;
+}
+
+.blue {
+  border: solid 1px #216efc;
+}
+
+.green {
+  border: solid 1px #27c42d;
+}
+/*# sourceMappingURL=htmlattr與自定義屬性.css.map */

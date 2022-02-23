@@ -1,0 +1,132 @@
+@mixin size {
+  width: 900px;
+  height: 500px;
+}
+
+.box,
+.block {
+  border: solid 2px black;
+}
+
+.box {
+  @include size();
+  position: relative;
+
+  .block {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 0px;
+  }
+  .block1 {
+    left: 150px;
+    // 依照keyframes的指示操作
+    // keyframes的名稱,多久完成,重複幾次
+    animation: ani1 2s infinite;
+    animation-timing-function: linear;
+  }
+  .block2 {
+    left: 300px;
+    animation: ani2 2s infinite;
+    // 把動畫切割！
+    // animation-timing-function: steps(2);
+  }
+  .block3 {
+    left: 450px;
+    animation: ani3 2s infinite;
+  }
+  .block4 {
+    left: 600px;
+    animation: ani4 2s infinite;
+  }
+  .block5 {
+    left: 750px;
+    animation: ani5 2s infinite;
+  }
+}
+
+// keyframes 貌似不受層級干擾
+@keyframes ani1 {
+  0% {
+    bottom: 100px;
+  }
+  50% {
+    bottom: 0px;
+    background-color: red;
+  }
+  100% {
+    bottom: 100px;
+  }
+}
+@keyframes ani2 {
+  0% {
+    bottom: 100px;
+  }
+  30% {
+    background-color: white;
+    transform: rotate(0deg);
+  }
+  50% {
+    background-color: red;
+    bottom: 0px;
+    transform: rotate(180deg);
+  }
+  75% {
+    background-color: white;
+    transform: rotate(0deg);
+  }
+  100% {
+    bottom: 100px;
+  }
+}
+
+@keyframes ani3 {
+  0% {
+    bottom: 100px;
+  }
+  30% {
+    background-color: white;
+    transform: scale(1);
+  }
+  50% {
+    bottom: 0px;
+    transform: scale(0.5);
+  }
+  75% {
+    background-color: white;
+    transform: scale(1);
+  }
+  100% {
+    bottom: 100px;
+  }
+}
+
+@keyframes ani4 {
+  0% {
+    transform: translateX(0px) translateY(0px);
+  }
+  25% {
+    transform: translateX(25px);
+  }
+  50% {
+    transform: translateX(25px) translateY(-25px);
+  }
+  75% {
+    transform: translateX(0px) translateY(-25px);
+  }
+}
+
+@keyframes ani5 {
+  0% {
+    transform: skewX(45deg);
+    transform-origin: 0% 100%;
+  }
+  50% {
+    transform: skewX(-20deg);
+    transform-origin: 0% 100%;
+  }
+  100% {
+    transform: skewX(20deg);
+    transform-origin: 0% 100%;
+  }
+}

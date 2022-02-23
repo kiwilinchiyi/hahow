@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./jquery&json動態產生購物清單.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Oswald&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="buylist">
+      <h1>mybuylist</h1>
+      <div class="buy_item control_panel">
+        <label for="">產品名</label>
+        <input id="input_name" type="text" placeholder="名稱..." />
+        <label for="">價錢</label>
+        <input id="input_price" type="text" placeholder="價錢" />
+        <span class="addbtn">+新增</span>
+      </div>
+      <div id="items_list">
+        <!-- <li class="buy_item total">
+          總價
+          <div class="price">500</div>
+        </li> -->
+      </div>
+    </div>
+
+    <script src="./../jquery-3.6.0.min.js"></script>
+    <script src="./jquery&json動態產生購物清單.js"></script>
+  </body>
+</html>

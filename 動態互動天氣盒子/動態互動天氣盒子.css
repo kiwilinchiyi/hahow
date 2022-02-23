@@ -1,0 +1,446 @@
+* {
+  position: relative;
+  font-family: "Hind Vadodara", sans-serif, "microshoft JhengHei";
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #333;
+}
+
+.daybox {
+  cursor: pointer;
+  width: 50%;
+  max-width: 400px;
+  background: #f3f3f3;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.daybox label {
+  cursor: pointer;
+}
+
+.daybox:hover .bottom {
+  height: 100px;
+}
+
+.daybox:hover .bottom .dayweather {
+  opacity: 1;
+  top: 0px;
+}
+
+.daybox #switch_night {
+  display: none;
+}
+
+.daybox #switch_night:checked + .top .moon,
+.daybox #switch_night:checked + .top .cloud {
+  opacity: 0.1;
+}
+
+.daybox #switch_night:checked + .top .temsvg circle,
+.daybox #switch_night:checked + .top .temsvg polyline,
+.daybox #switch_night:checked + .top .temsvg text {
+  opacity: 1;
+}
+
+.daybox .moon,
+.daybox .cloud {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.daybox .temsvg circle,
+.daybox .temsvg polyline,
+.daybox .temsvg text {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.daybox .temsvg polyline {
+  -webkit-transition: 0.5s 0.3s;
+  transition: 0.5s 0.3s;
+}
+
+.daybox .temsvg text {
+  -webkit-transition: 0.5s 0.6s;
+  transition: 0.5s 0.6s;
+}
+
+.daybox .top {
+  border-radius: 5px 5px 0px 0px;
+  height: 330px;
+  background: linear-gradient(20deg, #19283d, #1d678f);
+  background-size: 100% 300%;
+  -webkit-animation: daylight 20s both;
+          animation: daylight 20s both;
+}
+
+@-webkit-keyframes daylight {
+  0% {
+    background-position: 100% 30%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+@keyframes daylight {
+  0% {
+    background-position: 100% 30%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+.daybox .top .moon {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  -webkit-box-shadow: 15px -15px;
+          box-shadow: 15px -15px;
+  position: absolute;
+  left: 50px;
+  top: 100px;
+  -webkit-animation: moonmove 20s infinite;
+          animation: moonmove 20s infinite;
+}
+
+@-webkit-keyframes moonmove {
+  0% {
+    -webkit-box-shadow: 15px -15px #ffd633;
+            box-shadow: 15px -15px #ffd633;
+    -webkit-transform: translateX(-15px) translateY(15px);
+            transform: translateX(-15px) translateY(15px);
+  }
+  100% {
+    -webkit-box-shadow: -30px 30px #ffd633;
+            box-shadow: -30px 30px #ffd633;
+    -webkit-transform: translateX(30px) translateY(-30px);
+            transform: translateX(30px) translateY(-30px);
+  }
+}
+
+@keyframes moonmove {
+  0% {
+    -webkit-box-shadow: 15px -15px #ffd633;
+            box-shadow: 15px -15px #ffd633;
+    -webkit-transform: translateX(-15px) translateY(15px);
+            transform: translateX(-15px) translateY(15px);
+  }
+  100% {
+    -webkit-box-shadow: -30px 30px #ffd633;
+            box-shadow: -30px 30px #ffd633;
+    -webkit-transform: translateX(30px) translateY(-30px);
+            transform: translateX(30px) translateY(-30px);
+  }
+}
+
+.daybox .top .cloud {
+  width: 100px;
+  height: 36px;
+  position: absolute;
+  left: 200px;
+  bottom: 50px;
+  border-radius: 20px;
+  -webkit-animation: cloudmove 4s infinite linear;
+          animation: cloudmove 4s infinite linear;
+  background-color: #f3f3f3;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+@-webkit-keyframes cloudmove {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes cloudmove {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+.daybox .top .cloud:before, .daybox .top .cloud:after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: #f3f3f3;
+  border-radius: 100%;
+  position: absolute;
+}
+
+.daybox .top .cloud:before {
+  left: 16px;
+  top: -28px;
+}
+
+.daybox .top .cloud:after {
+  left: 32px;
+  top: -20px;
+}
+
+.daybox .top .cloud .rain {
+  width: 2px;
+  height: 10px;
+  position: absolute;
+  left: 45px;
+  bottom: 15px;
+  background: #f3f3f3;
+  -webkit-animation: raindrop 1s infinite linear;
+          animation: raindrop 1s infinite linear;
+}
+
+.daybox .top .cloud .rain2 {
+  left: 70px;
+  bottom: 20px;
+  -webkit-animation-delay: -0.4s;
+          animation-delay: -0.4s;
+}
+
+.daybox .top .cloud .rain3 {
+  left: 30px;
+  bottom: 20px;
+  -webkit-animation-delay: -0.6s;
+          animation-delay: -0.6s;
+}
+
+@-webkit-keyframes raindrop {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+}
+
+@keyframes raindrop {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+}
+
+.daybox .top .temsvg {
+  width: 100%;
+}
+
+.daybox .top .temsvg polyline {
+  stroke: black;
+  stroke-width: 1px;
+  fill: none;
+  stroke: white;
+  opacity: 0.2;
+}
+
+.daybox .top .temsvg text {
+  fill: #f3f3f3;
+  -webkit-transform: translateX(5px) translateY(20px);
+          transform: translateX(5px) translateY(20px);
+  font-size: 12px;
+  opacity: 0;
+}
+
+.daybox .top .temsvg circle {
+  fill: #f3f3f3;
+  opacity: 0.2;
+}
+
+.daybox .top .text_area {
+  display: inline-block;
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  color: #f3f3f3;
+}
+
+.daybox .top .text_area .temperature {
+  font-size: 75px;
+  line-height: 80px;
+}
+
+.daybox .top .text_area .infos {
+  font-size: 13px;
+  opacity: 0.5;
+}
+
+.daybox .bottom {
+  height: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 0px 0px 5px 5px;
+  overflow: hidden;
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
+}
+
+.daybox .bottom .dayweather {
+  width: calc(100% / 7 - 5px);
+  display: inline-block;
+  text-align: center;
+  opacity: 0;
+  top: 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.daybox .bottom .dayweather h3 {
+  font-size: 8px;
+  color: rgba(51, 51, 51, 0.7);
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.daybox .bottom .dayweather svg {
+  width: 100%;
+  max-width: 40px;
+  height: 30px;
+}
+
+.daybox .bottom .dayweather svg .cloud {
+  fill: #ccc;
+  width: 100px;
+  height: 36px;
+  position: absolute;
+  left: 200px;
+  bottom: 50px;
+  border-radius: 20px;
+  -webkit-animation: cloudmove 4s infinite linear;
+          animation: cloudmove 4s infinite linear;
+}
+
+@keyframes cloudmove {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+.daybox .bottom .dayweather svg .sun {
+  fill: #ffd633;
+  stroke: rgba(255, 214, 51, 0.5);
+  stroke-width: 10px;
+  stroke-dasharray: 5px;
+}
+
+.daybox .bottom .dayweather svg .rain {
+  stroke: black;
+  -webkit-animation: raindrop 1s infinite;
+          animation: raindrop 1s infinite;
+  fill: #4dacff;
+}
+
+@keyframes raindrop {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+}
+
+.daybox .bottom .dayweather:nth-child(1) {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.daybox .bottom .dayweather:nth-child(1) {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.daybox .bottom .dayweather:nth-child(2) {
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+
+.daybox .bottom .dayweather:nth-child(3) {
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
+
+.daybox .bottom .dayweather:nth-child(4) {
+  -webkit-transition-delay: 0.8s;
+          transition-delay: 0.8s;
+}
+
+.daybox .bottom .dayweather:nth-child(5) {
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+}
+
+.daybox .bottom .dayweather:nth-child(6) {
+  -webkit-transition-delay: 1.2s;
+          transition-delay: 1.2s;
+}
+
+.daybox .bottom .dayweather:nth-child(7) {
+  -webkit-transition-delay: 1.4s;
+          transition-delay: 1.4s;
+}
+/*# sourceMappingURL=動態互動天氣盒子.css.map */

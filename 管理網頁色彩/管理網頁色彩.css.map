@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAkBA,AAAA,CAAC,CAAC;EACA,WAAW,EAJC,QAAQ,EAAE,YAAY,EAAE,oBAAoB;EAKxD,SAAS,EAJC,IAAI;CAKf;;AACD,AAAA,KAAK,CAAC;EACJ,MAAM,EAAE,KAAK,CAhBG,GAAG,CAHR,OAAO;EAoBlB,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;CACd",
+    "sources": [
+        "管理網頁色彩.scss"
+    ],
+    "names": [],
+    "file": "管理網頁色彩.css"
+}

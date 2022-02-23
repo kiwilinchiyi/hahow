@@ -1,0 +1,112 @@
+* {
+  position: relative;
+  font-family: "Roboto", sans-serif, "microsoft jhenghei";
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffc954;
+}
+
+#buylist {
+  display: inline-block;
+  padding: 20px;
+  border: solid 4px #444;
+  background-color: #f3f3f3;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+#buylist h1 {
+  padding: 20px;
+  margin-top: -20px;
+  margin-left: -20px;
+  margin-right: -20px;
+  border-bottom: solid 4px #444;
+  background-color: #ff3d4a;
+  color: #f3f3f3;
+  font-weight: 800;
+}
+
+#buylist #items_list {
+  padding: 5px;
+  margin-top: 10px;
+}
+
+#buylist .buy_item {
+  padding: 5px;
+  list-style: none;
+  border: solid 3px black;
+  margin-top: 10px;
+  font-weight: 900;
+}
+
+#buylist .buy_item input {
+  width: 100px;
+  border: solid 3px black;
+  padding: 2px;
+}
+
+#buylist .buy_item .price {
+  display: inline-block;
+  position: absolute;
+  padding-left: 8px;
+  padding-right: 8px;
+  right: 50px;
+  background-color: #ffc954;
+}
+
+#buylist .buy_item .price::after {
+  content: " $";
+}
+
+#buylist .buy_item .del_btn {
+  display: inline-block;
+  position: absolute;
+  padding: 0px 6px;
+  right: 10px;
+  cursor: pointer;
+}
+
+#buylist .buy_item .del_btn:hover {
+  background-color: #ff3d4a;
+  color: white;
+}
+
+#buylist .buy_item .addbtn {
+  cursor: pointer;
+  margin-left: 10px;
+  padding: 5px;
+  border: solid 3px #444;
+}
+
+#buylist .buy_item .addbtn:hover {
+  background-color: #ff3d4a;
+  color: white;
+}
+
+#buylist .control_panel {
+  padding: 20px;
+}
+
+#buylist .total {
+  background-color: #ff3d4a;
+  color: #f3f3f3;
+}
+
+#buylist .total .price {
+  background-color: transparent;
+}
+/*# sourceMappingURL=jquery&json動態產生購物清單.css.map */

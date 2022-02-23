@@ -1,0 +1,27 @@
+// color variable
+$color_white: #efefef;
+$color_red: #e72243;
+$color_black: #333;
+$color_grey: #dbdcdc;
+
+// base size
+$base_line_width: 4px;
+
+// break width
+$break_large: 1024px;
+$break_middle: 768px;
+$break_large: 400px;
+
+// font setting
+$font-family: "Oswald", "sans-serif", "microsoft jhenghei";
+$font-size: 10px;
+
+* {
+  font-family: $font-family;
+  font-size: $font-size;
+}
+.test {
+  border: solid $base_line_width $color_grey;
+  width: 100px;
+  height: 100px;
+}

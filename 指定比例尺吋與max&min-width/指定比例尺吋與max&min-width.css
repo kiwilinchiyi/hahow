@@ -1,0 +1,53 @@
+* {
+  font-family: "microsoft jhenghei";
+}
+
+.container {
+  font-size: 0px;
+  text-align: center;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container .block {
+  display: inline-block;
+  font-size: 20px;
+  height: 200px;
+  border: solid 3px black;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container .block .icon {
+  width: 30%;
+  min-width: 150px;
+}
+
+.a {
+  height: initial;
+}
+
+.a,
+.g {
+  width: 100%;
+}
+
+.b {
+  width: 70%;
+}
+
+.c {
+  width: 30%;
+}
+
+.d,
+.e {
+  width: 35%;
+}
+
+.f {
+  width: 30%;
+}
+/*# sourceMappingURL=指定比例尺吋與max&min-width.css.map */

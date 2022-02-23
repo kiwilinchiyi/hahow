@@ -1,0 +1,76 @@
+svg {
+  width: 240px;
+  border: solid 2px black;
+}
+#pic1 {
+  stroke: black;
+  stroke-width: 3px;
+  circle {
+    fill: white;
+  }
+}
+
+#pic2 {
+  stroke: black;
+  stroke-width: 3px;
+  circle {
+    fill: white;
+  }
+  rect {
+    fill: none;
+  }
+}
+
+#pic3 {
+  stroke: black;
+  stroke-width: 2px;
+  circle {
+    fill: black;
+  }
+  polyline {
+    fill: none;
+  }
+}
+
+#pic6 {
+  stroke: black;
+  stroke-width: 2px;
+  fill: none;
+  .frame_outer,
+  .frame_inner,
+  .neck,
+  .bottom {
+    transform: scale(0);
+    transition-duration: 0.5s;
+    transition-delay: 0.5s;
+  }
+  .screen_content {
+    opacity: 0;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+  }
+  &:hover {
+    .frame_outer,
+    .frame_inner,
+    .neck,
+    .bottom {
+      transform: scale(1);
+      transition-delay: 0s;
+      transform-origin: center bottom;
+    }
+    .screen_content {
+      opacity: 1;
+      transition-delay: 0.5s;
+    }
+  }
+  circle {
+    fill: red;
+    stroke: none;
+  }
+  text {
+    fill: black;
+    stroke: none;
+    font-family: "microsoft jhenghei";
+    font-size: 10px;
+  }
+}

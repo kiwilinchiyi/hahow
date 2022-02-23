@@ -1,0 +1,49 @@
+svg {
+  width: 240px;
+  border: solid 2px black;
+}
+#pic1 {
+  stroke: black;
+  stroke-width: 3px;
+  circle {
+    fill: white;
+  }
+}
+
+#pic2 {
+  stroke: black;
+  stroke-width: 3px;
+  circle {
+    fill: white;
+  }
+  rect {
+    fill: none;
+  }
+}
+
+#pic3 {
+  stroke: black;
+  stroke-width: 2px;
+  circle {
+    fill: black;
+  }
+  polyline {
+    fill: none;
+  }
+}
+
+#pic6 {
+  stroke: black;
+  stroke-width: 2px;
+  fill: none;
+  circle {
+    fill: red;
+    stroke: none;
+  }
+  text {
+    fill: black;
+    stroke: none;
+    font-family: "microsoft jhenghei";
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,158 @@
+* {
+  vertical-align: middle;
+  position: relative;
+  font-family: "microsoft jhenghei";
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e9ebee;
+}
+
+html .container,
+body .container {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+html .container .topbar,
+body .container .topbar {
+  height: 50px;
+  background-color: #3b5998;
+}
+
+html .container .topbar .fa-brands,
+html .container .topbar .fa-facebook,
+body .container .topbar .fa-brands,
+body .container .topbar .fa-facebook {
+  color: white;
+  font-size: 30px;
+  margin: 10px;
+}
+
+html .container .topbar input,
+body .container .topbar input {
+  height: 30px;
+  margin: 10px;
+  margin-left: 0px;
+  width: 300px;
+  border-radius: 5px;
+  padding-left: 10px;
+  border: none;
+}
+
+html .container .cover,
+body .container .cover {
+  background-image: url("https://scontent.frmq2-1.fna.fbcdn.net/v/t31.18172-8/18056229_1674262062589249_5777942672103137886_o.jpg?_nc_cat=102&ccb=1-5&_nc_sid=e3f864&_nc_ohc=UtmEf8k5A5IAX9RAd1s&_nc_ht=scontent.frmq2-1.fna&oh=00_AT-B8btA_EjhV87UvzFT6bUmiPYVEZjzJlchC-9EtS6ibQ&oe=623ABBB7");
+  background-position: 0 bottom;
+  height: 330px;
+  background-size: 100% auto;
+}
+
+html .container .midbar,
+body .container .midbar {
+  height: 50px;
+  background-color: #fff;
+}
+
+html .container .midbar .personimg,
+body .container .midbar .personimg {
+  width: 130px;
+  height: 130px;
+  background-image: url("https://scontent.frmq2-2.fna.fbcdn.net/v/t1.6435-9/87677485_3375087765839995_3202439680184287232_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=174925&_nc_ohc=PUpEA-wRFAsAX_j2k1b&_nc_ht=scontent.frmq2-2.fna&oh=00_AT-sUxF8ouu-p5ORcsTQk3gxYXVqYz80_N3-mHCBy1ba_A&oe=623CA53C");
+  background-size: 100% auto;
+  border: solid 4px white;
+  position: absolute;
+  top: -130px;
+  left: 20px;
+}
+
+html .container .midbar .personimg .names,
+body .container .midbar .personimg .names {
+  position: absolute;
+  right: -120px;
+  color: white;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+html .container .midbar .personimg .names h2,
+html .container .midbar .personimg .names h5,
+body .container .midbar .personimg .names h2,
+body .container .midbar .personimg .names h5 {
+  margin: 0px;
+}
+
+html .container .midbar .personimg .names h2,
+body .container .midbar .personimg .names h2 {
+  font-size: 32px;
+}
+
+html .container .midbar .personimg .names h5,
+body .container .midbar .personimg .names h5 {
+  font-size: 16px;
+}
+
+html .container .bottombar,
+body .container .bottombar {
+  width: 35%;
+  min-width: 300px;
+  padding: 20px;
+  font-size: 14px;
+  line-height: 25px;
+  background-color: #fff;
+  margin-top: 10px;
+}
+
+html .container .bottombar i,
+body .container .bottombar i {
+  width: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .topbar {
+    height: 60px;
+  }
+  .topbar > .icon {
+    height: 40px;
+    margin: 10px;
+  }
+  .topbar > .icon > input {
+    height: 35px;
+    width: calc(100% - 50px - 30px);
+    margin-top: 12.5px;
+    background-color: #263961;
+    color: black;
+  }
+  .midbar {
+    white-space: nowrap;
+    height: 120px;
+  }
+  .midbar > .personimg {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .midbar > .personimg > .names {
+    right: initial;
+    left: 50%;
+    top: initial;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    bottom: -50%;
+    color: #555;
+  }
+  .bottom_bar {
+    margin-top: 0px;
+    width: 100%;
+  }
+  .bottom_bar > p {
+    padding: 10px;
+    border-top: solid 1px rgba(0, 0, 0, 0.2);
+  }
+}
+/*# sourceMappingURL=實作手機版面-模仿FB帳號頁面桌面.css.map */

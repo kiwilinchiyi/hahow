@@ -1,0 +1,368 @@
+* {
+  //   border: 1px solid black;
+  font-family: "PingFang TC";
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  // position: relative;
+}
+// color variable
+$header_color: #c4c4c4;
+$navbar_p_color: #8e8e8e;
+$navbar_p_hover_color: #28afca;
+$page_background_color: #f2f4f7;
+$page_front_color: #ffffff;
+$namecard_color: #696969;
+$headshot_border_color: #fdebeb;
+$button_color: #29afcb;
+$icon_color: #dadada;
+
+html,
+body {
+  background-color: $page_background_color;
+}
+.header {
+  background-color: $header_color;
+  position: absolute;
+  width: 100%;
+  height: 119px;
+  left: 0px;
+  top: 0px;
+}
+.body {
+  // 讓article及aside平行
+  display: flex;
+  position: relative;
+  article {
+    position: absolute;
+    width: 1061px;
+    height: 560px;
+    left: 47px;
+    top: 135px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 10px rgba(95, 95, 95, 0.1);
+    background-color: $page_front_color;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 0px;
+      position: absolute;
+      top: 0px;
+      padding-left: 29px;
+      bottom: 24px;
+      width: 100%;
+      height: 69px;
+      list-style: none;
+      border-bottom: 1px solid black;
+    }
+    li {
+      text-align: center;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 120%;
+      padding-right: 10px;
+      padding-left: 10px;
+      border: transparent 5px solid;
+      padding-top: 24px;
+      padding-bottom: 16px;
+      &:hover {
+        a {
+          color: $navbar_p_hover_color;
+        }
+        border-bottom: $navbar_p_hover_color solid 5px;
+        border-radius: 5px;
+      }
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+      font-weight: 900;
+      font-size: 1.25rem;
+    }
+
+    .ill {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      //   height: 50vh;
+      //   padding: 30vh;
+      .left {
+        position: absolute;
+        width: 259px;
+        height: 283px;
+        left: 401px;
+        top: 108px;
+      }
+      h1 {
+        position: absolute;
+        width: 140px;
+        height: 34px;
+        left: 461px;
+        top: 408px;
+      }
+      h3 {
+        position: absolute;
+        // width: 185px;
+        height: 21px;
+        left: 430px;
+        top: 447px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 150%;
+        text-align: center;
+        letter-spacing: 0.25px;
+        color: #696969;
+      }
+    }
+  }
+
+  aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 0px 30px;
+    position: absolute;
+    width: 347px;
+    height: 560px;
+    left: 1118px;
+    top: 135px;
+    background: $page_front_color;
+    box-shadow: 0px 0px 10px rgba(95, 95, 95, 0.1);
+    border-radius: 16px;
+    // z-index: -5;
+    img {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      left: 133px;
+      top: 94px;
+      border: 1px solid #ec5760;
+      box-sizing: border-box;
+      border-radius: 500px;
+    }
+    h1 {
+      position: absolute;
+      width: 300px;
+      height: 34px;
+      left: 23.5px;
+      top: 194px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 120%;
+      text-align: center;
+      color: #3e3a39;
+    }
+    h5 {
+      position: absolute;
+      width: 74px;
+      height: 20px;
+      left: 136.09px;
+      top: 228px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 150%;
+      text-align: center;
+      letter-spacing: 0.25px;
+    }
+    .word {
+      position: absolute;
+      width: 284px;
+      height: 60px;
+      left: 31.5px;
+      top: 268px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 150%;
+      text-align: center;
+      letter-spacing: 0.25px;
+      color: #696969;
+      flex: none;
+      order: 2;
+      flex-grow: 0;
+      margin: 20px 0px;
+    }
+
+    .followersinfo {
+      position: absolute;
+      width: 23px;
+      height: 24px;
+      left: 63px;
+      top: 358px;
+      right: 261px;
+      bottom: 178px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 120%;
+      color: #3e3a39;
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+      margin: 0px 10px;
+    }
+    .followers {
+      position: absolute;
+      top: 362px;
+      right: 186px;
+      bottom: 182px;
+      left: 96px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 120%;
+      letter-spacing: 1.25px;
+      color: #696969;
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+      margin: 0px 10px;
+    }
+    .followinginfo {
+      position: absolute;
+      top: 358px;
+      right: 138px;
+      bottom: 178px;
+      left: 185px;
+      width: 24px;
+      height: 24px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 120%;
+      color: #3e3a39;
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+      margin: 0px 10px;
+    }
+    .following {
+      position: absolute;
+      top: 362px;
+      right: 63px;
+      bottom: 182px;
+      left: 219px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 120%;
+      letter-spacing: 1.25px;
+      color: #696969;
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+      margin: 0px 10px;
+    }
+    .followbutton {
+      position: absolute;
+      top: 412px;
+      right: 39px;
+      bottom: 102px;
+      left: 39px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 21px;
+      background: $button_color;
+      border: 0px transparent solid;
+      border-radius: 40px;
+      flex: none;
+      order: 4;
+      flex-grow: 0;
+      margin: 20px 0px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 120%;
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+      margin: 0px 10px;
+      color: #ffffff;
+      cursor: pointer;
+    }
+
+    .fa-facebook {
+      position: absolute;
+      top: 488px;
+      right: 228px;
+      bottom: 40px;
+      left: 87px;
+      font-size: 32px;
+      color: #dadada;
+      cursor: pointer;
+    }
+    .fa-line {
+      position: absolute;
+      top: 488px;
+      right: 181px;
+      bottom: 40px;
+      left: 134px;
+      font-size: 32px;
+      color: #dadada;
+      border-radius: 50%;
+      border: 1px solid transparent;
+      cursor: pointer;
+    }
+    .twitter {
+      position: absolute;
+      top: 488px;
+      right: 134px;
+      bottom: 40px;
+      left: 181px;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: #ffffff solid 1px;
+      background-color: $icon_color;
+      cursor: pointer;
+      .fa-twitter {
+        position: absolute;
+        left: 25%;
+        right: 26.6%;
+        top: 30%;
+        bottom: 30%;
+        font-size: 16px;
+        color: #ffffff;
+      }
+    }
+    .mail {
+      position: absolute;
+      top: 488px;
+      right: 87px;
+      bottom: 40px;
+      left: 228px;
+      border-radius: 50%;
+      border: #ffffff solid 1px;
+      background-color: $icon_color;
+      cursor: pointer;
+      .fa-envelope {
+        position: absolute;
+        left: 20%;
+        right: 20%;
+        top: 23%;
+        bottom: 30%;
+        font-size: 18px;
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+footer {
+  background-color: $header_color;
+  //   width: $page_width;
+
+  position: absolute;
+  width: 100%;
+  height: 120px;
+  left: 0px;
+  top: 735px;
+}

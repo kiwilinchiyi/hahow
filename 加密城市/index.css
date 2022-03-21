@@ -1,0 +1,441 @@
+* {
+  font-family: "PingFang TC";
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #f2f4f7;
+}
+
+.header {
+  background-color: #c4c4c4;
+  position: absolute;
+  width: 100%;
+  height: 119px;
+  left: 0px;
+  top: 0px;
+}
+
+.body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.body article {
+  position: absolute;
+  width: 1061px;
+  height: 560px;
+  left: 47px;
+  top: 135px;
+  border-radius: 16px;
+  -webkit-box-shadow: 0px 0px 10px rgba(95, 95, 95, 0.1);
+          box-shadow: 0px 0px 10px rgba(95, 95, 95, 0.1);
+  background-color: #ffffff;
+}
+
+.body article ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0px;
+  position: absolute;
+  top: 0px;
+  padding-left: 29px;
+  bottom: 24px;
+  width: 100%;
+  height: 69px;
+  list-style: none;
+  border-bottom: 1px solid black;
+}
+
+.body article li {
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 120%;
+  padding-right: 10px;
+  padding-left: 10px;
+  border: transparent 5px solid;
+  padding-top: 24px;
+  padding-bottom: 16px;
+}
+
+.body article li:hover {
+  border-bottom: #28afca solid 5px;
+  border-radius: 5px;
+}
+
+.body article li:hover a {
+  color: #28afca;
+}
+
+.body article a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 1.25rem;
+}
+
+.body article .ill {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.body article .ill .left {
+  position: absolute;
+  width: 259px;
+  height: 283px;
+  left: 401px;
+  top: 108px;
+}
+
+.body article .ill h1 {
+  position: absolute;
+  width: 140px;
+  height: 34px;
+  left: 461px;
+  top: 408px;
+}
+
+.body article .ill h3 {
+  position: absolute;
+  height: 21px;
+  left: 430px;
+  top: 447px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.25px;
+  color: #696969;
+}
+
+.body aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 0px 30px;
+  position: absolute;
+  width: 347px;
+  height: 560px;
+  left: 1118px;
+  top: 135px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 0px 10px rgba(95, 95, 95, 0.1);
+          box-shadow: 0px 0px 10px rgba(95, 95, 95, 0.1);
+  border-radius: 16px;
+}
+
+.body aside img {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  left: 133px;
+  top: 94px;
+  border: 1px solid #ec5760;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 500px;
+}
+
+.body aside h1 {
+  position: absolute;
+  width: 300px;
+  height: 34px;
+  left: 23.5px;
+  top: 194px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 120%;
+  text-align: center;
+  color: #3e3a39;
+}
+
+.body aside h5 {
+  position: absolute;
+  width: 74px;
+  height: 20px;
+  left: 136.09px;
+  top: 228px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.25px;
+}
+
+.body aside .word {
+  position: absolute;
+  width: 284px;
+  height: 60px;
+  left: 31.5px;
+  top: 268px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.25px;
+  color: #696969;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+  margin: 20px 0px;
+}
+
+.body aside .followersinfo {
+  position: absolute;
+  width: 23px;
+  height: 24px;
+  left: 63px;
+  top: 358px;
+  right: 261px;
+  bottom: 178px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  color: #3e3a39;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+  margin: 0px 10px;
+}
+
+.body aside .followers {
+  position: absolute;
+  top: 362px;
+  right: 186px;
+  bottom: 182px;
+  left: 96px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 120%;
+  letter-spacing: 1.25px;
+  color: #696969;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+  margin: 0px 10px;
+}
+
+.body aside .followinginfo {
+  position: absolute;
+  top: 358px;
+  right: 138px;
+  bottom: 178px;
+  left: 185px;
+  width: 24px;
+  height: 24px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  color: #3e3a39;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+  margin: 0px 10px;
+}
+
+.body aside .following {
+  position: absolute;
+  top: 362px;
+  right: 63px;
+  bottom: 182px;
+  left: 219px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 120%;
+  letter-spacing: 1.25px;
+  color: #696969;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+  margin: 0px 10px;
+}
+
+.body aside .followbutton {
+  position: absolute;
+  top: 412px;
+  right: 39px;
+  bottom: 102px;
+  left: 39px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 21px;
+  background: #29afcb;
+  border: 0px transparent solid;
+  border-radius: 40px;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+  margin: 20px 0px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+  flex: none;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  flex-grow: 0;
+  margin: 0px 10px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.body aside .fa-facebook {
+  position: absolute;
+  top: 488px;
+  right: 228px;
+  bottom: 40px;
+  left: 87px;
+  font-size: 32px;
+  color: #dadada;
+  cursor: pointer;
+}
+
+.body aside .fa-line {
+  position: absolute;
+  top: 488px;
+  right: 181px;
+  bottom: 40px;
+  left: 134px;
+  font-size: 32px;
+  color: #dadada;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.body aside .twitter {
+  position: absolute;
+  top: 488px;
+  right: 134px;
+  bottom: 40px;
+  left: 181px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: #ffffff solid 1px;
+  background-color: #dadada;
+  cursor: pointer;
+}
+
+.body aside .twitter .fa-twitter {
+  position: absolute;
+  left: 25%;
+  right: 26.6%;
+  top: 30%;
+  bottom: 30%;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.body aside .mail {
+  position: absolute;
+  top: 488px;
+  right: 87px;
+  bottom: 40px;
+  left: 228px;
+  border-radius: 50%;
+  border: #ffffff solid 1px;
+  background-color: #dadada;
+  cursor: pointer;
+}
+
+.body aside .mail .fa-envelope {
+  position: absolute;
+  left: 20%;
+  right: 20%;
+  top: 23%;
+  bottom: 30%;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+footer {
+  background-color: #c4c4c4;
+  position: absolute;
+  width: 100%;
+  height: 120px;
+  left: 0px;
+  top: 735px;
+}
+/*# sourceMappingURL=index.css.map */
